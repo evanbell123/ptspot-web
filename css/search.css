@@ -1,0 +1,41 @@
+
+.category_table{
+    margin: 0px;
+}
+
+.category_left{
+    border-radius: .25em 0em 0em .25em !important;
+    text-align: left;
+}
+
+.category_right{
+    border-radius: 0em .25em .25em 0em !important;
+    text-align: right;
+}
+
+.results_table .category_table td{
+    /*font-weight: normal;*/
+    font-size: 14px;
+}
+
+.results_table td{
+    /*font-weight: bold;*/
+    font-size: 30px;
+}
+
+.results_photo{
+    font-size: 14px;
+}
+
+#search_bar{
+    margin-bottom: 0px !important;
+}
+
+.trainer_result{
+    cursor: pointer;
+}
+
+.search_avatar{
+    width: 85px !important;
+    height: 85px !important;
+}

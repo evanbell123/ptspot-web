@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html,
+body {
+    /*min-height: 100%;*/
+    font-family: 'Segoe UI', 'PT Sans', sans-serif;
+    /*color: rgb (9,112,84)*/
+    background-color: whitesmoke;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+.avatar-view {
+    display: block;
+    width: 120px;
+    //height: 120px;
+    //border: 3px solid #fff;
+    border-radius: 50%;
+    //box-shadow: 0 0 5px rgba(0,0,0,.15);
+    overflow: hidden;
+}
+
+.cssEffects .avatar-view:hover {
+    //border-color: #ccf;
+    box-shadow: 0 0 5px rgba(0,0,0,.15);
+}
+
+.datepicker{z-index:1151 !important;}
+
+.index_buttons{
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.btn_cirlce{
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    border: 6px solid #74777c;
+}
+
+.btn_circle_xl{
+    width: 300px;
+    height: 300px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+th{
+    text-align: center;
+}
+
+.tr:hover{
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.borderless td, .borderless th {
+    border: none !important;
+}
+
+.table_header {
+    color: black;
+}
+
+.custom_label{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle !important;
+    float: none;
+    border: 0px !important;
+    -webkit-border-radius: .25em !important;
+    -moz-border-radius: .25em !important;
+    border-radius: .25em !important;
+}
+
+.na {
+    background-color: #A8A8A1 !important;
+}
+
+.danger {
+    background-color: #d9534f !important;
+}
+
+.warning {
+    background-color: #f0ad4e !important;
+}
+
+.info {
+    background-color: #5bc0de !important;
+}
+
+.primary {
+    background-color: #337ab7 !important;
+}
+
+.success {
+    background-color: #5cb85c !important;
+}
+
+.danger_text {
+    color: #d9534f !important;
+}
+
+.warning_text {
+    color: #f0ad4e !important;
+}
+
+.info_text {
+    color: #5bc0de !important;
+}
+
+.primary_text {
+    color: #337ab7 !important;
+}
+
+.success_text {
+    color: #5cb85c !important;
+}
+
+.border_round_left {
+    border-radius: .25em 0em 0em .25em !important;
+}
+
+.border_round_right {
+    border-radius: 0em .25em .25em 0em !important;
+}
+
+.padding_upper {
+    padding-top: 1em;
+}
+
+.padding {
+    padding: 1em;
+}
+
+.page_content{
+    margin-top: 5em;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+
+
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.0.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
+ */
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: scale(1);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}

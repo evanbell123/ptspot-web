@@ -1,0 +1,199 @@
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top container" role="navigation">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand home_link">The PTSpot</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul id="account_header" class="nav navbar-nav navbar-right account">
+
+            </ul>
+        </div>
+    </nav>
+
+    <!--Login-->
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="login_form" class="form-horizontal" role="form">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend class="text-center">Log In</legend>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="loginEmail">Email</label>
+                            <div class="col-md-4">
+                                <input id="loginEmail" name="loginEmail" placeholder="Enter Your E-mail" class="form-control input-md" required="" type="text">
+                            </div>
+                        </div>
+
+                        <!-- Password input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="loginPassword">Password</label>
+                            <div class="col-md-4">
+                                <input id="loginPassword" name="loginPassword" placeholder="Enter Your Password" class="form-control input-md" required="" type="password">
+
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="login_button"></label>
+                            <div class="col-md-4">
+                                <button type="submit" id="login_button" name="login_button" class="btn btn-primary">Submit</button>
+                                <br>
+                                <a id="register_link" class="clickable">or register here</a>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--register-->
+    <div class="modal fade" id="registerModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="register_form" class="form-horizontal" role="form" data-toggle="validator">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend class="text-center">Sign Up. It's Free!</legend>
+
+                        <!-- Text input-->
+                        <div class="form-group has-feedback">
+                            <label class="col-md-4 control-label" for="firstName">First Name</label>
+                            <div class="col-md-5">
+                                <input id="firstName" name="firstName" placeholder="Enter Your First Name" class="form-control input-md" required="" type="text">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="lastName">Last Name</label>
+                            <div class="col-md-5">
+                                <input id="lastName" name="lastName" placeholder="Enter Your Last Name" class="form-control input-md" required="" type="text">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="registerEmail">E-mail</label>
+                            <div class="col-md-5">
+                                <input id="registerEmail"
+                                       name="registerEmail"
+                                       placeholder="Enter Your E-mail"
+                                       class="form-control input-md"
+                                       required="" 
+                                       type="email"
+                                       data-error="Invalid Email">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <!-- Password input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="registerPassword">Password</label>
+                            <div class="col-md-5">
+                                <input id="registerPassword"
+                                       name="registerPassword"
+                                       placeholder="Enter Your Password"
+                                       class="form-control input-md"
+                                       required="" type="password"
+                                       data-minlength="8"
+                                       data-error="Password must contain at least 8 characters">
+                                <span class="help-block">Minimum of 8 characters</span>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <!-- Password input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="confirmPassword">Confirm Password</label>
+                            <div class="col-md-5">
+                                <input id="confirmPassword"
+                                       name="confirmPassword" 
+                                       placeholder="Enter Your Password Again" 
+                                       class="form-control input-md"
+                                       data-match="#registerPassword"
+                                       data-match-error="Passwords don't match"
+                                       required=""
+                                       type="password">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="birthDate">Birth Date</label>
+                            <div class="col-md-5">
+                                <input id="birthDate" 
+                                       name="birthDate" 
+                                       placeholder="MM/DD/YYYY" 
+                                       class="form-control input-md" 
+                                       type="text" 
+                                       required="" 
+                                       data-provide="datepicker-inline"
+                                       data-date-end-date="0d"
+                                       data-date-start-date="01/01/1915"
+                                       data-date-start-view="2">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <!-- Multiple Radios (inline) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="gender">Gender</label>
+                            <div class="col-md-4">
+                                <label class="radio-inline" for="gender-0">
+                                    <input name="gender" id="gender-0" value="1" type="radio" required=""> Male
+                                </label>
+                                <label class="radio-inline" for="gender-1">
+                                    <input name="gender" id="gender-1" value="0" type="radio"> Female
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Multiple Radios (inline) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="role">Are you a fitness trainer?</label>
+                            <div class="col-md-4">
+                                <label class="radio-inline" for="role-0">
+                                    <input name="role" id="role-0" value="1" type="radio" required=""> Yes
+                                </label>
+                                <label class="radio-inline" for="role-1">
+                                    <input name="role" id="role-1" value="0" type="radio"> No
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="register_button"></label>
+                            <div class="col-md-4">
+                                <button type="submit" id="register_button" name="register_button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
