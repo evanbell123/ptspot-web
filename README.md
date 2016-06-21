@@ -1,2 +1,2 @@
 # ptspot-web
-Web app for finding and reviewing personal fitness trainers
+RESTful Web Service and web client for finding and reviewing personal fitness trainers.
